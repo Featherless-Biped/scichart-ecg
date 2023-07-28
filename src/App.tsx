@@ -309,7 +309,10 @@ export default function VitalSignsMonitorDemo() {
 
     return (
         <>
-            <div id={divElementId} style={{ height: "97dvh" , width : "97dvw" }} />
+            <div
+                id={divElementId}
+                style={{ height: "97dvh", width: "97dvw" }}
+            />
         </>
     );
 }
