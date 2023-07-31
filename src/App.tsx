@@ -44,6 +44,7 @@ const getValuesFromData = (xIndex: number) => {
         bloodPressureArr.push(bloodPressureValues[dataIndex]);
         bloodVolumeArr.push(bloodVolumeValues[dataIndex]);
         bloodOxygenationArr.push(bloodOxygenationValues[dataIndex]);
+        console.log(xArr);
     }
     return {
         xArr,
