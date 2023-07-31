@@ -65,7 +65,7 @@ const addRenderableSeriesWithDynamicYAxis = (
         width: 8,
         height: 8,
         strokeThickness: 2,
-        fill: "blue",
+        // fill: "blue",
         stroke: "blue",
     };
 
@@ -172,8 +172,7 @@ const drawExample = async (numGraphs: number) => {
 
 let currentPoint = 0;
 
-export default function Chart(numGraphs: number) {
-    numGraphs = 5;
+export default function Chart({ numGraphs }: { numGraphs: number }) {
     const sciChartSurfaceRef = React.useRef<SciChartSurface>();
     const controlsRef = React.useRef<{
         handleStart: () => void;
