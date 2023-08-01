@@ -151,7 +151,11 @@ const drawExample = async (numGraphs: number) => {
 
         timerId = setTimeout(runUpdateDataOnTimeout, TIMER_TIMEOUT_MS);
     };
+    // ZoomExtents() to show all graphs horizontally
+    sciChartSurface.zoomExtents();
 
+    // ZoomExtentsY() to show all graphs vertically
+    sciChartSurface.zoomExtentsY();
     const handleStop = () => {
         clearTimeout(timerId);
     };

@@ -7,6 +7,6 @@ import Chart from "./components/chart";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <React.StrictMode>
         {/* <App /> */}
-        <Chart numGraphs={42} />
+        <Chart numGraphs={10} />
     </React.StrictMode>
 );
