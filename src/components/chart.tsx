@@ -14,7 +14,6 @@ import { vitalSignsEcgData } from "../assets/vitalSignsEcgData";
 const divElementId = "chart";
 const STEP = 2_200;
 const TIMER_TIMEOUT_MS = 50;
-const STROKE_THICKNESS = 1;
 const POINTS_LOOP = 44_000 * 5; // 5 seconds
 const GAP_POINTS = STEP * 0.02;
 const DATA_LENGTH = vitalSignsEcgData.xValues.length; // `5000 points
@@ -62,8 +61,8 @@ const addRenderableSeriesWithDynamicYAxis = (
 ) => {
     const STROKE_THICKNESS = 2;
     const pointMarkerOptions = {
-        width: 8,
-        height: 8,
+        width: 1,
+        height: 1,
         strokeThickness: 2,
         // fill: "blue",
         stroke: "blue",
@@ -79,7 +78,7 @@ const addRenderableSeriesWithDynamicYAxis = (
                 dataSeries,
                 pointMarker: new EllipsePointMarker(wasmContext, {
                     ...pointMarkerOptions,
-                    stroke: "pink",
+                    // stroke: "pink",
                 }),
             })
         );
